@@ -1,0 +1,24 @@
+{
+  "name": "assignment-1-advanced-js-and-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edwin-Guo/Assignment-1-Advanced-JS-and-Tailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Edwin-Guo/Assignment-1-Advanced-JS-and-Tailwind/issues"
+  },
+  "homepage": "https://github.com/Edwin-Guo/Assignment-1-Advanced-JS-and-Tailwind#readme",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
