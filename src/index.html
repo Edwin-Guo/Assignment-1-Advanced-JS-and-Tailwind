@@ -3,10 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unit Converter</title>
+  <title>Homepage</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"> </script>
 </head>
-<body>
-  
+<body class = "min-h-screen bg-slate-100">
+  <header class ="border-b bg-white border-slate-300">
+    <div class = "max-w-5xl mx-auto py-5 px-4 flex justify-between items-center">
+      <a href = "#" class = "text-xl py-2 px-4 rounded-lg
+      font-bold bg-blue-200
+      hover:bg-blue-300">
+        Unit Converter
+      </a>
+      <div class = "flex gap-2">
+        
+        <a href="weight.html" class = "py-2 px-4 rounded-lg font-semibold cursor-pointer
+         hover:bg-blue-300
+         focus:font-bold focus:bg-blue-200">
+          Weight
+        </a>
+
+        <a href = "distance.html" class = "py-2 px-4 rounded-lg font-semibold cursor-pointer
+         hover:bg-blue-300
+         focus:font-bold focus:bg-blue-200">
+          Distance
+        </a>
+
+        <a href="temperature.html" class = "py-2 px-4 rounded-lg font-semibold cursor-pointer
+         hover:bg-blue-300
+         focus:font-bold focus:bg-blue-200">
+          Temperature
+        </a>
+      </div>
+    </div>
+  </header>
+    <main>
+
+      <section class = "max-w-5xl mx-auto py-5 text-center">
+        <div class = "bg-white rounded-2xl shadow-md p-6 max-w-5xl mx-auto">
+          <p class = "text-xl font-bold">Welcome to the Unit Converter!</p>
+          <p>This site allows you to convert between metric and imperial measurements and vise versa:</p>
+          <p class = "font-semibold">Weight (kilograms/pounds), Distance (kilometers/miles), Temperature (celsius/fahrenheit) </p>
+        </div>
+        <div class = "bg-white rounded-2xl shadow-md p-6 max-w-5xl mx-auto m-3">
+          <p class = "font-bold text-xl">Instructions</p>
+          <ol class ="list-decimal list-inside text-left w-fit mx-auto">
+            <li>Please select which type of measurement you're trying to convert, at the top right on the nav bar.</li>
+            <li>Input your measurement into the text box dependent on the unit your converting to.</li>
+            <li>Click the convert button below the text box.</li>
+            <li>Get your new value below the button</li>
+          </ol>
+        </div>  
+      </section>
+    </main>
+    <script src="main.js"></script>
 </body>
 </html>
