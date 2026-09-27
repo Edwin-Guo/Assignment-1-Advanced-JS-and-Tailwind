@@ -36,6 +36,56 @@
       </div>
     </div>
   </header>
-  <script src="main.js"></script>
+  
+  <main class="max-w-5xl mx-auto grid grid-cols-2 gap-5 py-5 px-4">
+    <div class = "bg-white rounded-2xl shadow-md p-6">
+      <h3 class = "text-lg font-bold text-slate-900">Miles to Kilometers</h3>
+      <label for="miles-input" class= "block text-sm font-medium text-slate-700 mt-5 mb-2">
+        Miles
+      </label>
+      <input 
+        id="miles-input"
+        type="number"
+        value="0"
+        class="w-full rounded-lg border border-slate-300 px-4 py-2 text-slate-900
+                focus:border-red-500 focus:outline-none"
+        >
+        <button 
+          id="miles-button"
+          class="w-full mt-4 rounded-lg bg-red-600 px-4 py-2 font-semibold text-white
+                hover:bg-red-700 transition cursor-pointer">
+          Convert
+        </button>
+        <div class="mt-5 rounded-lg bg-slate-50 p-4 text-center">
+          <p class="text-xs uppercase tracking-wide text-slate-500">Kilometres</p>
+          <p id="miles-result" class="text-2xl font-bold text-red-600 mt-1">0.00</p>
+        </div>  
+    </div>
+    
+    <div class = "bg-white rounded-2xl shadow-md p-6">
+      <h3 class = "text-lg font-bold text-slate-900">Kilometers to Miles</h3>
+      <label for="kilometers-input" class= "block text-sm font-medium text-slate-700 mt-5 mb-2">
+        Kilometers
+      </label>
+      <input 
+        id="kilometers-input"
+        type="number"
+        value="0"
+        class="w-full rounded-lg border border-slate-300 px-4 py-2 text-slate-900
+                focus:border-blue-500 focus:outline-none"
+        >
+        <button 
+          id="kilometers-button"
+          class="w-full mt-4 rounded-lg bg-blue-600 px-4 py-2 font-semibold text-white
+                hover:bg-blue-700 transition cursor-pointer">
+          Convert
+        </button>
+        <div class="mt-5 rounded-lg bg-slate-50 p-4 text-center">
+          <p class="text-xs uppercase tracking-wide text-slate-500">Miles</p>
+          <p id="kilometers-result" class="text-2xl font-bold text-blue-600 mt-1">0.00</p>
+        </div>  
+    </div>
+  </main>
+  <script src="../dist/main.js"></script>
 </body>
 </html>
