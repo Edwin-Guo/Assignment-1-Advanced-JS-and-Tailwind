@@ -10,7 +10,7 @@ const milesConvert = (): void => {
   const kilometers: number = milesToKilometers(miles);
   milesResult.textContent = kilometers.toFixed(2);
 }
-milesButton.addEventListener("click", milesConvert);
+milesButton?.addEventListener("click", milesConvert);
 
 
 const kilometersInput = document.getElementById("kilometers-input") as HTMLInputElement;
@@ -23,6 +23,7 @@ const kilometersConvert = (): void => {
   const miles: number = kilometersToMiles(kilometers);
   kilometersResult.textContent = miles.toFixed(2);
 }
+<<<<<<< HEAD
 kilometersButton.addEventListener("click", kilometersConvert);
 
 //--- Temperature ---
@@ -77,3 +78,33 @@ if (fahrenheitButton) {
   };
   fahrenheitButton.addEventListener("click", fahrenheitConvert);
 }
+=======
+kilometersButton?.addEventListener("click", kilometersConvert);
+
+
+//kg and lbs
+const kilogramsToPounds = (kilograms: number): number => kilograms * 2.20462;
+const poundsToKilograms = (pounds: number): number => pounds / 2.20462;
+
+const kgInput = document.getElementById("kg-input") as HTMLInputElement;
+const kgButton = document.getElementById("kg-button") as HTMLButtonElement;
+const kgResult = document.getElementById("kg-result") as HTMLParagraphElement;
+const handleKgConvert = (): void =>
+{
+  const kilograms: number = Number(kgInput.value);
+  const pounds: number = kilogramsToPounds(kilograms);
+  kgResult.textContent = pounds.toFixed(2);
+}
+kgButton?.addEventListener("click", handleKgConvert);
+
+const lbsInput = document.getElementById("pounds-input") as HTMLInputElement;
+const lbsButton = document.getElementById("pounds-button") as HTMLButtonElement;
+const lbsResult = document.getElementById("pounds-result") as HTMLParagraphElement;
+const handleLbsConvert = (): void =>
+{
+  const pounds: number = Number(lbsInput.value);
+  const kilograms: number = poundsToKilograms(pounds);
+  lbsResult.textContent = kilograms.toFixed(2);
+}
+lbsButton?.addEventListener("click", handleLbsConvert);
+>>>>>>> 46dbf0a81615d9a42507ee6088ec9082389d6de9
