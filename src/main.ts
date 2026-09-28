@@ -110,9 +110,10 @@ if (fahrenheitButton) {
 
 
 //kg and lbs by Adrianne
+//converts pounds to kilograms and vice versa
 const kilogramsToPounds = (kilograms: number): number => kilograms * 2.20462;
 const poundsToKilograms = (pounds: number): number => pounds / 2.20462;
-
+//gets the html ids so we can use them here
 const kgInput = document.getElementById("kg-input") as HTMLInputElement;
 const kgButton = document.getElementById("kg-button") as HTMLButtonElement;
 const kgResult = document.getElementById("kg-result") as HTMLParagraphElement;
@@ -123,8 +124,9 @@ const kgResult = document.getElementById("kg-result") as HTMLParagraphElement;
 //   const pounds: number = kilogramsToPounds(kilograms);
 //   kgResult.textContent = pounds.toFixed(2);
 // }
+//adds an on click event to convert
 kgButton?.addEventListener("click", () => converter("kg", "lbs"));
-
+//gets pounds ids to make it usable here
 const lbsInput = document.getElementById("pounds-input") as HTMLInputElement;
 const lbsButton = document.getElementById("pounds-button") as HTMLButtonElement;
 const lbsResult = document.getElementById("pounds-result") as HTMLParagraphElement;
@@ -135,4 +137,5 @@ const lbsResult = document.getElementById("pounds-result") as HTMLParagraphEleme
 //   const kilograms: number = poundsToKilograms(pounds);
 //   lbsResult.textContent = kilograms.toFixed(2);
 // }
+//adds on click event to convert
 lbsButton?.addEventListener("click", () => converter("lbs", "kg"));
